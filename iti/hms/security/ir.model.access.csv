@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,prem_read,prem_write,prem_create,prem_unlink
+hms_user_access_pateint,hms user access patient,model_hms_patient,hms.hms_user_group,1,1,1,0
+hms_user_access_doctor,hms user access doctor,model_hms_doc,hms.hms_user_group,1,0,0,0
+hms_user_access_dept,hms user access dept,model_hms_dept,hms.hms_user_group,1,0,0,0
+
+hms_manage_access_patient, hms manager access patient, model_hms_patient,hms.hms_manager_group,1,1,1,1
+hms_manage_access_doctor, hms manager access doctor, model_hms_doc,hms.hms_manager_group,1,1,1,1
+hms_manage_access_dept, hms manager access dept, model_hms_dept,hms.hms_manager_group,1,1,1,1
+
+
+
+

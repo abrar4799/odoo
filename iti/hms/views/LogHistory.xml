@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="hms_loghistory_action" model="ir.actions.act_window">
+            <field name="name">Patients Log History</field>
+            <field name="res_model">hms.loghistory</field>
+        </record>
+
+        <menuitem id="hms_loghistory_menu" parent="hms_patient_root_menu" action="hms_loghistory_action"/>
+        <record id="hms_history_log_tree" model="ir.ui.view">
+            <field name="name">Patient History Log</field>
+            <field name="model">hms.loghistory</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="patient_id"/>
+                    <field name="description"/>
+
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

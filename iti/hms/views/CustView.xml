@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record id="cust_view_inherit" model="ir.ui.view">
+            <field name="name">Customer for view inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="email" position="after">
+                    <field name="website"/>
+                </field>
+               <xpath expr="//group[@name='misc']" position="inside">
+                    <field name="related_patient_id" />
+                </xpath>
+                 <xpath expr="//field[@name='vat']" position="attributes">
+                    <attribute name="required">True</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
